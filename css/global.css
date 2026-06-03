@@ -532,7 +532,6 @@ body {
     border: none;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     margin: 0 0 25px 0;
-    opacity: 1;
 }
 
 .footer-bottom {
@@ -673,7 +672,6 @@ body {
     margin: 0 auto;
     border: none;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    opacity: 1;
 }
 
 @media (max-width: 991.98px) {
