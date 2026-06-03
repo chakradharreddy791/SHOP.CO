@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../images/fevicon.png">
+    <title>Shop.co | Product Detail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/pdp.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easyzoom@2.5.0/css/easyzoom.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/easyzoom@2.5.0/dist/easyzoom.min.js"></script>
+    <script src="../../js/homepage.js" defer></script>
+</head>
+
+<body class="bg-white">
+
+    <!-- header -->
+    <header class="site-header sticky-top">
+
+        <!-- top promo bar -->
+        <div id="preheader" class="preheader bg-black text-white">
+            <div class="container px-4 px-lg-0">
+                <div
+                    class="preheader-inner position-relative d-flex align-items-center justify-content-center py-2 px-lg-0">
+                    <p class="preheader-text text-center mb-0">
+                        Sign up and get 20% off to your first order.
+                        <a href="#" class="link-light text-decoration-underline">Sign Up Now</a>
+                    </p>
+                    <button type="button" id="close-preheader"
+                        class="preheader-close btn btn-link p-0 border-0 text-white text-decoration-none position-absolute end-0 top-50 translate-middle-y d-none d-lg-flex align-items-center justify-content-center">
+                        <img class="preheader-close-img d-block" src="../../images/close-btn.png">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- main nav -->
+        <nav class="nav bg-white border-0">
+            <div class="nav-inner container px-4 px-lg-0 d-flex flex-nowrap align-items-center justify-content-between">
+                <div class="nav-left d-flex flex-row align-items-center">
+                    <div class="nav-mobile-brand d-flex d-lg-none flex-row align-items-center gap-3">
+                        <button type="button"
+                            class="icon-btn nav-menu-btn btn btn-link p-0 border-0 text-decoration-none">
+                            <img src="../../images/hamburger.svg" width="24" height="24">
+                        </button>
+                        <a class="nav-logo" href="../homepage/homepage.html">
+                            <img src="../../images/SHOP.CO.png" class="nav-logo-img">
+                        </a>
+                    </div>
+                    <a class="nav-logo-desktop d-none d-lg-flex align-items-center"
+                        href="../homepage/homepage.html">
+                        <img src="../../images/SHOP.CO.png" class="nav-logo-img">
+                    </a>
+                    <ul class="nav-links d-none d-lg-flex flex-row align-items-center gap-4 list-unstyled mb-0 ps-0">
+                        <li class="nav-item">
+                            <a class="nav-link d-inline-flex align-items-center gap-1 text-black text-decoration-none"
+                                href="../plp/plp.html">Shop
+                                <img src="../../images/caret-down.svg" class="nav-chevron"
+                                    width="16" height="16">
+                            </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-black text-decoration-none"
+                                href="../plp/plp.html">On Sale</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-black text-decoration-none"
+                                href="../plp/plp.html">New
+                                Arrivals</a></li>
+                        <li class="nav-item"><a class="nav-link text-black text-decoration-none"
+                                href="../plp/plp.html">Brands</a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="search-box d-none d-lg-flex flex-grow-1 align-items-center position-relative flex-shrink-1 min-w-0">
+                    <img src="../../images/search.svg" class="search-icon position-absolute" width="24"
+                        height="24">
+                    <input class="form-control border-0 bg-transparent shadow-none px-0" type="search"
+                        placeholder="Search for products...">
+                </div>
+                <div class="icon-block d-flex flex-row align-items-center">
+                    <button type="button"
+                        class="icon-btn search-toggle btn btn-link p-0 border-0 d-flex d-lg-none text-decoration-none">
+                        <img src="../../images/search-mobile-icon.png" width="24" height="24">
+                    </button>
+                    <a class="icon-btn d-inline-flex align-items-center justify-content-center text-decoration-none"
+                        href="../cart/cart.html">
+                        <img src="../../images/cart.svg" width="20" height="20">
+                    </a>
+                    <a class="icon-btn d-inline-flex align-items-center justify-content-center text-decoration-none"
+                        href="#">
+                        <img src="../../images/account.svg" width="20" height="20">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- breadcrumb -->
+
+    <div class="container breadcrumb-bar px-4 px-lg-0">
+        <nav>
+            <ol class="breadcrumb-list d-flex align-items-center list-unstyled mb-0">
+                <li class="breadcrumb-item"><a href="../homepage/homepage.html">Home</a> <span
+                        class="breadcrumb-separator"><img src="../../images/chevron-bc.png"></span></li>
+                <li class="breadcrumb-item"><a href="../plp/plp.html">Shop</a> <span class="breadcrumb-separator"><img
+                            src="../../images/chevron-bc.png"></span></li>
+                <li class="breadcrumb-item"><a href="../plp/plp.html">Men</a> <span class="breadcrumb-separator"><img
+                            src="../../images/chevron-bc.png"></span></li>
+                <li class="breadcrumb-item active">T-shirts</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- product detail -->
+    <section class="product-detail">
+        <div class="container px-4 px-lg-0">
+            <div class="product-detail-grid d-flex flex-column flex-lg-row align-items-start">
+
+                <!-- gallery -->
+                <div class="product-gallery  d-flex  gap-3 flex-column flex-lg-row">
+                    <div class="gallery-thumbs d-flex flex-lg-column gap-3">
+                        <button class="gallery-thumb active">
+                            <img src="../../images/1.3d5880e6.png" width="152" height="167">
+                        </button>
+                        <button class="gallery-thumb">
+                            <img src="../../images/1.3d5880e6.png" width="152" height="167">
+                        </button>
+                        <button class="gallery-thumb">
+                            <img src="../../images/1.3d5880e6.png" width="152" height="167">
+                        </button>
+                    </div>
+                    <div class="easyzoom easyzoom--overlay gallery-main">
+                        <a href="../../images/1.3d5880e6.png">
+                            <img class="gallery-main-img" src="../../images/1.3d5880e6.png">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- product info -->
+                <div class="product-info">
+                    <h1 class="product-title">One Life Graphic T shirt</h1>
+
+                    <!-- rating -->
+                    <div class="product-rating d-flex align-items-center">
+                        <div class="product-stars d-flex align-items-center">
+                            <img src="../../images/star.svg" width="24" height="24">
+                            <img src="../../images/star.svg" width="24" height="24">
+                            <img src="../../images/star.svg" width="24" height="24">
+                            <img src="../../images/star.svg" width="24" height="24">
+                            <img class="product-star-half" src="../../images/star-half.d10953a0.svg" width="12"
+                                height="24">
+                        </div>
+                        <span class="product-rating-text">4.5/<span class="product-rating-den">5</span></span>
+                    </div>
+
+                    <!-- price -->
+                    <div class="product-prices d-flex align-items-center">
+                        <span class="product-current-price">$260</span>
+                        <span class="product-original-price">$300</span>
+                        <span class="product-discount-badge">-20%</span>
+                    </div>
+
+                    <p class="product-description">This graphic t-shirt which is perfect for any occasion. Crafted from
+                        a soft and breathable fabric, it offers superior comfort and style.</p>
+
+                    <hr class="product-divider">
+
+                    <!-- color picker -->
+                    <div class="product-option">
+                        <span class="product-option-label">Select Colors</span>
+                        <div class="color-options d-flex align-items-center">
+                            <button class="color-swatch color-olive active" type="button"></button>
+                            <button class="color-swatch color-green" type="button"></button>
+                            <button class="color-swatch color-navy" type="button"></button>
+                        </div>
+                    </div>
+
+                    <hr class="product-divider">
+
+                    <!-- size picker -->
+                    <div class="product-option">
+                        <span class="product-option-label">Choose Size</span>
+                        <div class="size-options d-flex align-items-center flex-wrap">
+                            <button class="size-btn" type="button">Small</button>
+                            <button class="size-btn" type="button">Medium</button>
+                            <button class="size-btn active" type="button">Large</button>
+                            <button class="size-btn" type="button">X-Large</button>
+                        </div>
+                    </div>
+
+                    <hr class="product-divider">
+
+                    <!-- qty + add to cart -->
+                    <div class="product-actions d-flex align-items-center">
+                        <div class="quantity-selector d-flex align-items-center">
+                            <button class="qty-btn qty-minus" type="button">
+                                <img src="../../images/minus.svg" width="20" height="20">
+                            </button>
+                            <span class="qty-value">1</span>
+                            <button class="qty-btn qty-plus" type="button">
+                                <img src="../../images/plus.svg" width="20" height="20">
+                            </button>
+                        </div>
+                        <button class="add-to-cart-btn" type="button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- reviews section -->
+    <section class="pdp-reviews">
+        <div class="container px-4 px-lg-0">
+            <!-- tab navigation -->
+            <div class="pdp-tabs d-flex align-items-center">
+                <button class="pdp-tab" type="button">Product Details</button>
+                <button class="pdp-tab active" type="button">Rating &amp; Reviews</button>
+                <button class="pdp-tab" type="button">FAQs</button>
+            </div>
+            <div class="pdp-reviews-header d-flex align-items-center justify-content-between">
+                <div class="pdp-reviews-title-wrap d-flex align-items-center">
+                    <h2 class="pdp-reviews-title">All Reviews</h2>
+                    <span class="pdp-reviews-count">(451)</span>
+                </div>
+                <div class="pdp-reviews-actions d-flex align-items-center gap-3">
+                    <button class="pdp-filter-btn" type="button">
+                        <img src="../../images/filter-icon.png" width="20" height="20">
+                    </button>
+                    <select class="pdp-sort-select">
+                        <option>Latest</option>
+                    </select>
+                    <button class="pdp-write-review-btn" type="button">Write a Review</button>
+                </div>
+            </div>
+            <div class="pdp-reviews-grid">
+                <article class="pdp-review-card">
+                    <div class="pdp-review-top d-flex align-items-start justify-content-between">
+                        <div class="review-stars">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img class="product-star-half" src="../../images/star-half.d10953a0.svg" width="12"
+                                height="23">
+                        </div>
+                        <button class="pdp-review-menu" type="button">
+                            <img src="../../images/menu-dots.png" width="20" height="20">
+                        </button>
+                    </div>
+                    <div class="review-author">
+                        <strong class="review-name">Samantha D.</strong>
+                        <img src="../../images/verified.svg" width="24" height="24">
+                    </div>
+                    <p class="review-text">"I absolutely love this t-shirt! The design is unique and the fabric feels so
+                        comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite
+                        go-to shirt."</p>
+                    <span class="pdp-review-date">Posted on August 14, 2023</span>
+                </article>
+                <article class="pdp-review-card">
+                    <div class="pdp-review-top d-flex align-items-start justify-content-between">
+                        <div class="review-stars">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img src="../../images/star.svg" width="23" height="23">
+                        </div>
+                        <button class="pdp-review-menu" type="button">
+                            <img src="../../images/menu-dots.png" width="20" height="20">
+                        </button>
+                    </div>
+                    <div class="review-author">
+                        <strong class="review-name">Alex M.</strong>
+                        <img src="../../images/verified.svg" width="24" height="24">
+                    </div>
+                    <p class="review-text">"The t-shirt exceeded my expectations! The colors are vibrant and the print
+                        quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this
+                        t-shirt definitely gets a thumbs up from me."</p>
+                    <span class="pdp-review-date">Posted on August 15, 2023</span>
+                </article>
+                <article class="pdp-review-card">
+                    <div class="pdp-review-top d-flex align-items-start justify-content-between">
+                        <div class="review-stars">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img class="product-star-half" src="../../images/star-half.d10953a0.svg" width="12"
+                                height="23">
+                        </div>
+                        <button class="pdp-review-menu" type="button">
+                            <img src="../../images/menu-dots.png" width="20" height="20">
+                        </button>
+                    </div>
+                    <div class="review-author">
+                        <strong class="review-name">Ethan R.</strong>
+                        <img src="../../images/verified.svg" width="24" height="24">
+                    </div>
+                    <p class="review-text">"This t-shirt is a must-have for anyone who appreciates good design. The
+                        minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's
+                        touch in every aspect of this shirt."</p>
+                    <span class="pdp-review-date">Posted on August 16, 2023</span>
+                </article>
+                <article class="pdp-review-card">
+                    <div class="pdp-review-top d-flex align-items-start justify-content-between">
+                        <div class="review-stars">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img src="../../images/star.svg" width="23" height="23">
+                        </div>
+                        <button class="pdp-review-menu" type="button">
+                            <img src="../../images/menu-dots.png" width="20" height="20">
+                        </button>
+                    </div>
+                    <div class="review-author">
+                        <strong class="review-name">Olivia P.</strong>
+                        <img src="../../images/verified.svg" width="24" height="24">
+                    </div>
+                    <p class="review-text">"As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt
+                        not only represents those principles but also feels great to wear. It's evident that the
+                        designer poured their creativity into making this t-shirt stand out."</p>
+                    <span class="pdp-review-date">Posted on August 17, 2023</span>
+                </article>
+                <article class="pdp-review-card">
+                    <div class="pdp-review-top d-flex align-items-start justify-content-between">
+                        <div class="review-stars">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img src="../../images/star.svg" width="23" height="23">
+                        </div>
+                        <button class="pdp-review-menu" type="button">
+                            <img src="../../images/menu-dots.png" width="20" height="20">
+                        </button>
+                    </div>
+                    <div class="review-author">
+                        <strong class="review-name">Liam K.</strong>
+                        <img src="../../images/verified.svg" width="24" height="24">
+                    </div>
+                    <p class="review-text">"This t-shirt is a fusion of comfort and creativity. The fabric is soft, and
+                        the design speaks volumes about the designer's skill. It's like wearing a piece of art that
+                        reflects my passion for both design and fashion."</p>
+                    <span class="pdp-review-date">Posted on August 18, 2023</span>
+                </article>
+                <article class="pdp-review-card">
+                    <div class="pdp-review-top d-flex align-items-start justify-content-between">
+                        <div class="review-stars">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img src="../../images/star.svg" width="23" height="23">
+                            <img class="product-star-half" src="../../images/star-half.d10953a0.svg" width="12"
+                                height="23">
+                        </div>
+                        <button class="pdp-review-menu" type="button">
+                            <img src="../../images/menu-dots.png" width="20" height="20">
+                        </button>
+                    </div>
+                    <div class="review-author">
+                        <strong class="review-name">Ava H.</strong>
+                        <img src="../../images/verified.svg" width="24" height="24">
+                    </div>
+                    <p class="review-text">"I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy.
+                        The intricate details and thoughtful layout of the design make this shirt a conversation
+                        starter."</p>
+                    <span class="pdp-review-date">Posted on August 19, 2023</span>
+                </article>
+            </div>
+            <div class="pdp-reviews-loadmore text-center">
+                <button class="btn-load-more" type="button">Load More Reviews</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- you might also like -->
+    <section class="product-recommendation-section">
+        <div class="container px-4 px-lg-0 text-center">
+            <h2 class="section-title">You might also like</h2>
+            <div class="products-track-wrapper">
+                <div class="products-track">
+                    <article class="product-card-wrap">
+                        <a href="../pdp/pdp.html" class="product-card text-start text-decoration-none text-black">
+                            <div class="img-box">
+                                <img class="product-img" src="../../images/1.b89d8bd3.png" width="295" height="298">
+                            </div>
+                            <strong class="product-card-title d-block">Vertical Striped Shirt</strong>
+                            <div class="product-card-rating d-flex align-items-end flex-wrap mb-1">
+                                <span class="product-stars">
+                                    <img src="../../images/star.svg" width="19" height="18">
+                                    <img src="../../images/star.svg" width="19" height="18">
+                                    <img src="../../images/star.svg" width="19" height="18">
+                                    <img src="../../images/star.svg" width="19" height="18">
+                                    <img src="../../images/star.svg" width="19" height="18">
+                                </span>
+                                <span class="product-rating-text">5.0<span class="product-rating-den">/5</span></span>
+                            </div>
+                            <div class="product-card-prices d-flex align-items-center flex-wrap">
+                                <span class="product-sale-price">$212</span>
+                                <span class="product-list-price">$232</span>
+                                <span class="product-discount">-20%</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product-card-wrap">
+                        <a href="../pdp/pdp.html" class="product-card text-start text-decoration-none text-black">
+                            <div class="img-box">
+                                <img class="product-img" src="../../images/2.37daa510.png" width="295" height="298">
+                            </div>
+                            <strong class="product-card-title d-block">Courage Graphic T-shirt</strong>
+                            <div class="product-card-rating d-flex align-items-end flex-wrap mb-1">
+                                <span class="product-stars">
+                                    <img src="../../images/star.svg" width="19" height="18">
+                                    <img src="../../images/star.svg" width="19" height="18">
+                                    <img src="../../images/star.svg" width="19" height="18">
+                                    <img src="../../images/star.svg" width="19" height="18">
+                                    <img class="product-star-empty" src="../../images/star.svg" width="19" height="18">
+                                </span>
+                                <span class="product-rating-text">4.0<span class="product-rating-den">/5</span></span>
+                            </div>
+                            <div class="product-card-prices d-flex align-items-center flex-wrap">
+                                <span class="product-sale-price">$145</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product-card-wrap">
+                        <a href="../pdp/pdp.html" class="product-card text-start text-decoration-none text-black">
+                            <div class="img-box">
+                                <img class="product-img" src="../../images/3.993ef892.png" width="295" height="298">
+                            </div>
+                            <strong class="product-card-title d-block">Loose Fit Bermuda Shorts</strong>
+                            <div class="product-card-rating d-flex align-items-end flex-wrap mb-1">
+                                <span class="product-stars">
+                                    <img src="../../images/star.svg" width="19" height="18">
+                                    <img src="../../images/star.svg" width="19" height="18">
+                                    <img src="../../images/star.svg" width="19" height="18">
+                                    <img class="product-star-empty" src="../../images/star.svg" width="19" height="18">
+                                    <img class="product-star-empty" src="../../images/star.svg" width="19" height="18">
+                                </span>
+                                <span class="product-rating-text">3.0<span class="product-rating-den">/5</span></span>
+                            </div>
+                            <div class="product-card-prices d-flex align-items-center flex-wrap">
+                                <span class="product-sale-price">$80</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product-card-wrap">
+                        <a href="../pdp/pdp.html" class="product-card text-start text-decoration-none text-black">
+                            <div class="img-box">
+                                <img class="product-img" src="../../images/4.ecf2e2ac.png" width="295" height="298">
+                            </div>
+                            <strong class="product-card-title d-block">Faded Skinny Jeans</strong>
+                            <div class="product-card-rating d-flex align-items-end flex-wrap mb-1">
+                                <span class="product-stars">
+                                    <img src="../../images/star.svg" width="19" height="18">
+                                    <img src="../../images/star.svg" width="19" height="18">
+                                    <img src="../../images/star.svg" width="19" height="18">
+                                    <img src="../../images/star.svg" width="19" height="18">
+                                    <img class="product-star-half" src="../../images/star-half.d10953a0.svg" width="10"
+                                        height="18">
+                                </span>
+                                <span class="product-rating-text">4.5<span class="product-rating-den">/5</span></span>
+                            </div>
+                            <div class="product-card-prices d-flex align-items-center flex-wrap">
+                                <span class="product-sale-price">$210</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="newsletter-wrap position-relative">
+            <div class="newsletter-bg position-absolute bottom-0 start-0 w-100"></div>
+            <div class="container px-4 px-lg-0 position-relative">
+                <div class="newsletter-box d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                    <h2 class="newsletter-title mb-3 mb-lg-0">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+                    <form class="newsletter-form d-flex flex-column">
+                        <div class="newsletter-input-wrap position-relative">
+                            <img src="../../images/mail.svg" class="newsletter-mail-icon position-absolute"
+                                width="20" height="20">
+                            <input type="email" class="newsletter-input" placeholder="Enter your email address">
+                        </div>
+                        <button type="submit" class="newsletter-btn">Subscribe to Newsletter</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="container px-4 px-lg-0">
+                <div class="footer-top d-flex flex-column flex-lg-row">
+                    <div class="footer-brand">
+                        <a href="#" class="footer-logo text-decoration-none">
+                            <img src="../../images/SHOP.CO.png" class="footer-logo-img">
+                        </a>
+                        <p class="footer-desc">We have clothes that suits your style and which you're proud to wear.
+                            From
+                            women to men.</p>
+                        <div class="footer-socials d-flex align-items-center gap-3">
+                            <a href="#" class="social-link">
+                                <img src="../../images/twitter.b03b8cbe.svg" width="12" height="12">
+                            </a>
+                            <a href="#" class="social-link facebook-icon">
+                                <img src="../../images/facebook.ec567a02.svg" width="7" height="12">
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="../../images/instagram.c3d9a0fc.svg" width="12" height="12">
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="../../images/github.0933da81.svg" width="12" height="12">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-links-grid d-flex flex-wrap flex-lg-nowrap">
+                        <div class="footer-col">
+                            <h3 class="footer-col-title">COMPANY</h3>
+                            <ul class="footer-list list-unstyled mb-0">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Works</a></li>
+                                <li><a href="#">Career</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h3 class="footer-col-title">HELP</h3>
+                            <ul class="footer-list list-unstyled mb-0">
+                                <li><a href="#">Customer Support</a></li>
+                                <li><a href="#">Delivery Details</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h3 class="footer-col-title">FAQ</h3>
+                            <ul class="footer-list list-unstyled mb-0">
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Manage Deliveries</a></li>
+                                <li><a href="#">Orders</a></li>
+                                <li><a href="#">Payments</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h3 class="footer-col-title">RESOURCES</h3>
+                            <ul class="footer-list list-unstyled mb-0">
+                                <li><a href="#">Free eBooks</a></li>
+                                <li><a href="#">Development Tutorial</a></li>
+                                <li><a href="#">How to - Blog</a></li>
+                                <li><a href="#">Youtube Playlist</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="footer-divider">
+                <div class="footer-bottom d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                    <p class="footer-copy mb-3 mb-sm-0">Shop.co &copy; 2000-2023, All Rights Reserved</p>
+                    <div class="footer-payments d-flex align-items-center">
+                        <span class="payment-badge"><img src="../../images/badge-visa.svg"></span>
+                        <span class="payment-badge"><img src="../../images/badge-mastercard.svg"></span>
+                        <span class="payment-badge"><img src="../../images/badge-paypal.svg"></span>
+                        <span class="payment-badge"><img src="../../images/badge-applepay.svg"></span>
+                        <span class="payment-badge"><img src="../../images/badge-gpay.svg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="../../js/pdp.js"></script>
+</body>
+
+</html>
