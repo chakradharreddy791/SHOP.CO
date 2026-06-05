@@ -23,6 +23,46 @@
         });
     }
 
+    // Mobile offcanvas menu
+    var menuBtn = document.querySelector('.nav-menu-btn');
+    var offcanvasMenu = document.getElementById('offcanvas-menu');
+    var offcanvasBackdrop = document.getElementById('offcanvas-backdrop');
+    var offcanvasClose = document.getElementById('offcanvas-close');
+
+    function openOffcanvas() {
+        if (!offcanvasMenu || !offcanvasBackdrop) return;
+        offcanvasMenu.classList.add('active');
+        offcanvasBackdrop.classList.add('active');
+        document.body.classList.add('offcanvas-open');
+        offcanvasClose.focus();
+    }
+
+    function closeOffcanvas() {
+        if (!offcanvasMenu || !offcanvasBackdrop) return;
+        offcanvasMenu.classList.remove('active');
+        offcanvasBackdrop.classList.remove('active');
+        document.body.classList.remove('offcanvas-open');
+        if (menuBtn) menuBtn.focus();
+    }
+
+    if (menuBtn) {
+        menuBtn.addEventListener('click', openOffcanvas);
+    }
+
+    if (offcanvasClose) {
+        offcanvasClose.addEventListener('click', closeOffcanvas);
+    }
+
+    if (offcanvasBackdrop) {
+        offcanvasBackdrop.addEventListener('click', closeOffcanvas);
+    }
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && offcanvasMenu && offcanvasMenu.classList.contains('active')) {
+            closeOffcanvas();
+        }
+    });
+
     // Reviews carousel - Slick
     if (typeof $.fn.slick !== 'undefined' && $('.reviews-track').length) {
         $('.reviews-track').slick({

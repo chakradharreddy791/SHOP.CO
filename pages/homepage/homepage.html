@@ -82,6 +82,50 @@
         </nav>
     </header>
 
+    <!-- mobile offcanvas menu -->
+    <div id="offcanvas-backdrop" class="offcanvas-backdrop"></div>
+    <aside id="offcanvas-menu" class="offcanvas-menu" aria-label="Mobile navigation">
+        <div class="offcanvas-header">
+            <a href="#">
+                <img src="../../images/SHOP.CO.png" class="offcanvas-logo-img" alt="Shop.co logo">
+            </a>
+            <button type="button" id="offcanvas-close" class="offcanvas-close" aria-label="Close menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="offcanvas-search">
+            <div class="offcanvas-search-wrap">
+                <img src="../../images/search.svg" alt="Search icon">
+                <input type="search" class="offcanvas-search-input" placeholder="Search for products..." aria-label="Search for products">
+            </div>
+        </div>
+        <ul class="offcanvas-nav">
+            <li class="offcanvas-nav-item">
+                <a href="../plp/plp.html" class="offcanvas-nav-link">Shop
+                    <img src="../../images/caret-down.svg" class="nav-chevron" width="14" height="14" alt="">
+                </a>
+            </li>
+            <li class="offcanvas-nav-item">
+                <a href="../plp/plp.html?filter=on-sale" class="offcanvas-nav-link">On Sale</a>
+            </li>
+            <li class="offcanvas-nav-item">
+                <a href="../plp/plp.html?filter=new-arrivals" class="offcanvas-nav-link">New Arrivals</a>
+            </li>
+            <li class="offcanvas-nav-item">
+                <a href="../plp/plp.html?filter=brands" class="offcanvas-nav-link">Brands</a>
+            </li>
+        </ul>
+        <div class="offcanvas-footer">
+            <div class="offcanvas-footer-links">
+                <a href="../cart/cart.html" class="offcanvas-footer-link">Cart</a>
+                <a href="#" class="offcanvas-footer-link">My Account</a>
+            </div>
+        </div>
+    </aside>
+
     <!-- hero banner -->
     <section class="hero overflow-hidden">
         <div class="hero-inner">
