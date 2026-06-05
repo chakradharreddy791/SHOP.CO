@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../css/global.css">
     <link rel="stylesheet" href="../../css/cart.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="../../js/homepage.js" defer></script>
+    <script src="../../js/homepage.js" defer=""></script>
 </head>
 
 <body class="bg-white">
@@ -30,7 +30,7 @@
                     </p>
                     <button type="button" id="close-preheader"
                         class="preheader-close btn btn-link p-0 border-0 text-white text-decoration-none position-absolute end-0 top-50 translate-middle-y d-none d-lg-flex align-items-center justify-content-center">
-                        <img class="preheader-close-img d-block" src="../../images/close-btn.png">
+                        <img class="preheader-close-img d-block" src="../../images/close-btn.png" alt="Close button">
                     </button>
                 </div>
             </div>
@@ -43,52 +43,53 @@
                     <div class="nav-mobile-brand d-flex d-lg-none flex-row align-items-center gap-3">
                         <button type="button"
                             class="icon-btn nav-menu-btn btn btn-link p-0 border-0 text-decoration-none">
-                            <img src="../../images/hamburger.svg" width="24" height="24">
+                            <img src="../../images/hamburger.svg" width="24" height="24" alt="hamberger-menu-icon">
                         </button>
                         <a class="nav-logo" href="../homepage/homepage.html">
-                            <img src="../../images/SHOP.CO.png" class="nav-logo-img">
+                            <img src="../../images/SHOP.CO.png" class="nav-logo-img" alt="Shop.co-mobile-logo">
                         </a>
                     </div>
                     <a class="nav-logo-desktop d-none d-lg-flex align-items-center"
-                        href="../homepage/homepage.html">
-                        <img src="../../images/SHOP.CO.png" class="nav-logo-img">
+                        href="../homepage/homepage.html#desktop">
+                        <img src="../../images/SHOP.CO.png" class="nav-logo-img" alt="Shop.co-desktop-logo">
                     </a>
                     <ul class="nav-links d-none d-lg-flex flex-row align-items-center gap-4 list-unstyled mb-0 ps-0">
                         <li class="nav-item">
                             <a class="nav-link d-inline-flex align-items-center gap-1 text-black text-decoration-none"
                                 href="../plp/plp.html">Shop
-                                <img src="../../images/caret-down.svg" class="nav-chevron" width="16"
-                                    height="16">
+                                <img src="../../images/caret-down.svg" class="nav-chevron" width="16" height="16"
+                                    alt="dropdown-arrow-icon">
                             </a>
                         </li>
                         <li class="nav-item"><a class="nav-link text-black text-decoration-none"
-                                href="../plp/plp.html">On Sale</a></li>
+                                href="../plp/plp.html?filter=on-sale">On Sale</a></li>
                         <li class="nav-item"><a class="nav-link text-black text-decoration-none"
-                                href="../plp/plp.html">New Arrivals</a></li>
+                                href="../plp/plp.html?filter=new-arrivals">New Arrivals</a></li>
                         <li class="nav-item"><a class="nav-link text-black text-decoration-none"
-                                href="../plp/plp.html">Brands</a></li>
+                                href="../plp/plp.html?filter=brands">Brands</a></li>
                     </ul>
                 </div>
 
                 <div
                     class="search-box d-none d-lg-flex flex-grow-1 align-items-center position-relative flex-shrink-1 min-w-0">
-                    <img src="../../images/search.svg" class="search-icon position-absolute" width="24" height="24">
+                    <img src="../../images/search.svg" class="search-icon position-absolute" width="24" height="24"
+                        alt="search-icon">
                     <input class="form-control border-0 bg-transparent shadow-none px-0" type="search"
-                        placeholder="Search for products...">
+                        placeholder="Search for products..." aria-label="Search for products">
                 </div>
 
                 <div class="icon-block d-flex flex-row align-items-center">
                     <button type="button"
                         class="icon-btn search-toggle btn btn-link p-0 border-0 d-flex d-lg-none text-decoration-none">
-                        <img src="../../images/search-mobile-icon.png" width="24" height="24">
+                        <img src="../../images/search-mobile-icon.png" width="24" height="24" alt="search-icon">
                     </button>
                     <a class="icon-btn d-inline-flex align-items-center justify-content-center text-decoration-none"
                         href="../cart/cart.html">
-                        <img src="../../images/cart.svg" width="20" height="20">
+                        <img src="../../images/cart.svg" width="20" height="20" alt="Shopping-cart-icon">
                     </a>
                     <a class="icon-btn d-inline-flex align-items-center justify-content-center text-decoration-none"
                         href="#">
-                        <img src="../../images/account.svg" width="20" height="20">
+                        <img src="../../images/account.svg" width="20" height="20" alt="Account-icon">
                     </a>
                 </div>
             </div>
@@ -100,7 +101,8 @@
         <nav>
             <ol class="breadcrumb-list d-flex align-items-center list-unstyled mb-0">
                 <li class="breadcrumb-item"><a href="../homepage/homepage.html">Home</a> <span
-                        class="breadcrumb-separator"><img src="../../images/chevron-bc.png"></span></li>
+                        class="breadcrumb-separator"><img src="../../images/chevron-bc.png" alt="chevron-right"></span>
+                </li>
                 <li class="breadcrumb-item active">Cart</li>
             </ol>
         </nav>
@@ -117,19 +119,22 @@
                         <!-- Item 1 -->
                         <div class="cart-item d-flex flex-row align-items-center">
                             <div class="cart-item-img-wrap">
-                                <img src="../../images/product-1.png" class="cart-item-img">
+                                <img src="../../images/product-1.png" class="cart-item-img"
+                                    alt="Gradient Graphic T-shirt">
                             </div>
                             <div class="cart-item-details d-flex flex-column flex-grow-1 justify-content-between h-100">
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div class="cart-item-info">
                                         <h3 class="cart-item-title">Gradient Graphic T-shirt</h3>
-                                        <p class="cart-item-attribute mb-0">Size: <span class="attribute-value">Large</span>
+                                        <p class="cart-item-attribute mb-0">Size: <span
+                                                class="attribute-value">Large</span>
                                         </p>
-                                        <p class="cart-item-attribute mb-0">Color: <span class="attribute-value">White</span>
+                                        <p class="cart-item-attribute mb-0">Color: <span
+                                                class="attribute-value">White</span>
                                         </p>
                                     </div>
                                     <button class="cart-item-delete btn btn-link p-0 border-0" width="24" height="24">
-                                        <img src="../../images/delete-icon.png">
+                                        <img src="../../images/delete-icon.png" alt="remove-product">
                                     </button>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-end mt-auto">
@@ -137,11 +142,11 @@
                                     <div
                                         class="quantity-selector d-flex align-items-center justify-content-between px-3">
                                         <button class="qty-btn btn btn-link p-0 border-0 text-decoration-none">
-                                            <img src="../../images/minus.svg">
+                                            <img src="../../images/minus.svg" alt="qty-minus-icon">
                                         </button>
                                         <span class="qty-value">1</span>
                                         <button class="qty-btn btn btn-link p-0 border-0 text-decoration-none">
-                                            <img src="../../images/plus.svg">
+                                            <img src="../../images/plus.svg" alt="qty-plus-icon">
                                         </button>
                                     </div>
                                 </div>
@@ -153,17 +158,21 @@
                         <!-- Item 2 -->
                         <div class="cart-item d-flex flex-row align-items-center">
                             <div class="cart-item-img-wrap">
-                                <img src="../../images/product-2.png" class="cart-item-img">
+                                <img src="../../images/product-2.png" class="cart-item-img" alt="Checkered Shirt">
                             </div>
                             <div class="cart-item-details d-flex flex-column flex-grow-1 justify-content-between h-100">
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div class="cart-item-info">
                                         <h3 class="cart-item-title">Checkered Shirt</h3>
-                                        <p class="cart-item-attribute mb-0">Size: <span class="attribute-value">Medium</span></p>
-                                        <p class="cart-item-attribute mb-0">Color: <span class="attribute-value">Red</span></p>
+                                        <p class="cart-item-attribute mb-0">Size: <span
+                                                class="attribute-value">Medium</span>
+                                        </p>
+                                        <p class="cart-item-attribute mb-0">Color: <span
+                                                class="attribute-value">Red</span>
+                                        </p>
                                     </div>
                                     <button class="cart-item-delete btn btn-link p-0 border-0" width="24" height="24">
-                                        <img src="../../images/delete-icon.png">
+                                        <img src="../../images/delete-icon.png" alt="remove-product">
                                     </button>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-end mt-auto">
@@ -171,11 +180,11 @@
                                     <div
                                         class="quantity-selector d-flex align-items-center justify-content-between px-3">
                                         <button class="qty-btn btn btn-link p-0 border-0 text-decoration-none">
-                                            <img src="../../images/minus.svg">
+                                            <img src="../../images/minus.svg" alt="qty-minus-icon">
                                         </button>
                                         <span class="qty-value">1</span>
                                         <button class="qty-btn btn btn-link p-0 border-0 text-decoration-none">
-                                            <img src="../../images/plus.svg">
+                                            <img src="../../images/plus.svg" alt="qty-plus-icon">
                                         </button>
                                     </div>
                                 </div>
@@ -187,17 +196,21 @@
                         <!-- Item 3 -->
                         <div class="cart-item d-flex flex-row align-items-center">
                             <div class="cart-item-img-wrap">
-                                <img src="../../images/product-3.png" class="cart-item-img">
+                                <img src="../../images/product-3.png" class="cart-item-img" alt="Skinny Fit Jeans">
                             </div>
                             <div class="cart-item-details d-flex flex-column flex-grow-1 justify-content-between h-100">
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div class="cart-item-info">
                                         <h3 class="cart-item-title">Skinny Fit Jeans</h3>
-                                        <p class="cart-item-attribute mb-0">Size: <span class="attribute-value">Large</span></p>
-                                        <p class="cart-item-attribute mb-0">Color: <span class="attribute-value">Blue</span></p>
+                                        <p class="cart-item-attribute mb-0">Size: <span
+                                                class="attribute-value">Large</span>
+                                        </p>
+                                        <p class="cart-item-attribute mb-0">Color: <span
+                                                class="attribute-value">Blue</span>
+                                        </p>
                                     </div>
                                     <button class="cart-item-delete btn btn-link p-0 border-0" width="24" height="24">
-                                        <img src="../../images/delete-icon.png">
+                                        <img src="../../images/delete-icon.png" alt="remove-product">
                                     </button>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-end mt-auto">
@@ -205,11 +218,11 @@
                                     <div
                                         class="quantity-selector d-flex align-items-center justify-content-between px-3">
                                         <button class="qty-btn btn btn-link p-0 border-0 text-decoration-none">
-                                            <img src="../../images/minus.svg">
+                                            <img src="../../images/minus.svg" alt="qty-minus-icon">
                                         </button>
                                         <span class="qty-value">1</span>
                                         <button class="qty-btn btn btn-link p-0 border-0 text-decoration-none">
-                                            <img src="../../images/plus.svg">
+                                            <img src="../../images/plus.svg" alt="qty-plus-icon">
                                         </button>
                                     </div>
                                 </div>
@@ -247,8 +260,9 @@
 
                         <div class="promo-box d-flex flex-row align-items-center mb-4">
                             <div class="promo-input-wrap d-flex align-items-center flex-grow-1">
-                                <img src="../../images/promo-tag.png" width="21" height="21">
-                                <input type="text" class="promo-input flex-grow-1" placeholder="Add promo code">
+                                <img src="../../images/promo-tag.png" width="21" height="21" alt="promo-tag-icon">
+                                <input type="text" class="promo-input flex-grow-1" placeholder="Add promo code"
+                                    aria-label="enter your promo code ">
                             </div>
                             <button class="btn btn-dark promo-apply-btn ">Apply</button>
                         </div>
@@ -256,7 +270,8 @@
                         <button
                             class="btn btn-dark checkout-btn w-100 d-flex align-items-center justify-content-center">
                             Go to Checkout
-                            <img src="../../images/arrow-right-white.png" width="24" height="24">
+                            <img src="../../images/arrow-right-white.png" width="24" height="24"
+                                alt="arrow-right-white">
                         </button>
                     </div>
                 </div>
@@ -274,8 +289,9 @@
                     <form class="newsletter-form d-flex flex-column">
                         <div class="newsletter-input-wrap position-relative">
                             <img src="../../images/mail.svg" class="newsletter-mail-icon position-absolute" width="20"
-                                height="20">
-                            <input type="email" class="newsletter-input" placeholder="Enter your email address">
+                                height="20" alt="Mail-icon">
+                            <input type="email" class="newsletter-input" placeholder="Enter your email address"
+                                aria-label="Email address">
                         </div>
                         <button type="submit" class="newsletter-btn">Subscribe to Newsletter</button>
                     </form>
@@ -287,22 +303,23 @@
                 <div class="footer-top d-flex flex-column flex-lg-row">
                     <div class="footer-brand">
                         <a href="#" class="footer-logo text-decoration-none">
-                            <img src="../../images/SHOP.CO.png" class="footer-logo-img">
+                            <img src="../../images/SHOP.CO.png" class="footer-logo-img" alt="Shop.co-main-logo">
                         </a>
                         <p class="footer-desc">We have clothes that suits your style and which you're proud to wear.
                             From women to men.</p>
                         <div class="footer-socials d-flex align-items-center gap-3">
                             <a href="#" class="social-link">
-                                <img src="../../images/twitter.b03b8cbe.svg" width="12" height="12">
+                                <img src="../../images/twitter.b03b8cbe.svg" width="12" height="12" alt="Twitter-logo">
                             </a>
                             <a href="#" class="social-link facebook-icon">
-                                <img src="../../images/facebook.ec567a02.svg" width="7" height="12">
+                                <img src="../../images/facebook.ec567a02.svg" width="7" height="12" alt="Facebook-logo">
                             </a>
                             <a href="#" class="social-link">
-                                <img src="../../images/instagram.c3d9a0fc.svg" width="12" height="12">
+                                <img src="../../images/instagram.c3d9a0fc.svg" width="12" height="12"
+                                    alt="Instagram-logo">
                             </a>
                             <a href="#" class="social-link">
-                                <img src="../../images/github.0933da81.svg" width="12" height="12">
+                                <img src="../../images/github.0933da81.svg" width="12" height="12" alt="GitHub-logo">
                             </a>
                         </div>
                     </div>
@@ -321,7 +338,7 @@
                             <ul class="footer-list list-unstyled mb-0">
                                 <li><a href="#">Customer Support</a></li>
                                 <li><a href="#">Delivery Details</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Terms &amp; Conditions</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
                             </ul>
                         </div>
@@ -347,18 +364,23 @@
                 </div>
                 <hr class="footer-divider">
                 <div class="footer-bottom d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                    <p class="footer-copy mb-3 mb-sm-0">Shop.co &copy; 2000-2023, All Rights Reserved</p>
+                    <p class="footer-copy mb-3 mb-sm-0">Shop.co © 2000-2023, All Rights Reserved</p>
                     <div class="footer-payments d-flex align-items-center">
-                        <span class="payment-badge"><img src="../../images/badge-visa.svg"></span>
-                        <span class="payment-badge"><img src="../../images/badge-mastercard.svg"></span>
-                        <span class="payment-badge"><img src="../../images/badge-paypal.svg"></span>
-                        <span class="payment-badge"><img src="../../images/badge-applepay.svg"></span>
-                        <span class="payment-badge"><img src="../../images/badge-gpay.svg"></span>
+                        <span class="payment-badge"><img src="../../images/badge-visa.svg" alt="Visa card "></span>
+                        <span class="payment-badge"><img src="../../images/badge-mastercard.svg"
+                                alt="Mastercard logo"></span>
+                        <span class="payment-badge"><img src="../../images/badge-paypal.svg" alt="PayPal logo "></span>
+                        <span class="payment-badge"><img src="../../images/badge-applepay.svg"
+                                alt="Apple Pay logo"></span>
+                        <span class="payment-badge"><img src="../../images/badge-gpay.svg"
+                                alt="Google Pay logo "></span>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+
 </body>
 
 </html>
