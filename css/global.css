@@ -1076,13 +1076,8 @@ body.offcanvas-open {
     width: 14px;
     height: 14px;
     transform: rotate(-90deg);
-    opacity: 0.4;
-    transition: opacity 0.2s ease;
 }
 
-.offcanvas-nav-link:hover .nav-chevron {
-    opacity: 0.7;
-}
 
 .offcanvas-footer {
     padding: 20px 24px;
@@ -1100,7 +1095,7 @@ body.offcanvas-open {
     font-family: 'Satoshi', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: rgba(0, 0, 0, 0.5);
+    color: #000;
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -1111,6 +1106,7 @@ body.offcanvas-open {
 
 /* Hide offcanvas on desktop */
 @media (min-width: 992px) {
+
     .offcanvas-backdrop,
     .offcanvas-menu {
         display: none !important;
